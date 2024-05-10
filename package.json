@@ -1,0 +1,27 @@
+{
+  "name": "fest-music",
+  "version": "1.0.0",
+  "description": "proyecto con SASS y NPM",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:dist/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pablitomartinez/fest-music.git"
+  },
+  "keywords": [
+    "SASS",
+    "NPM",
+    "Gulp"
+  ],
+  "author": "Pablo Martinez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pablitomartinez/fest-music/issues"
+  },
+  "homepage": "https://github.com/pablitomartinez/fest-music#readme",
+  "devDependencies": {
+    "sass": "^1.77.0"
+  }
+}
