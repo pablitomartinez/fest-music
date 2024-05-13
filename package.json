@@ -2,9 +2,11 @@
   "name": "fest-music",
   "version": "1.0.0",
   "description": "proyecto con SASS y NPM",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch src/scss:dist/css"
+    "sass": "sass --watch src/scss:dist/css",
+    "dev": "gulp dev"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,8 @@
   },
   "homepage": "https://github.com/pablitomartinez/fest-music#readme",
   "devDependencies": {
-    "sass": "^1.77.0"
+    "gulp": "^5.0.0",
+    "sass": "^1.77.0",
+    "gulp-sass": "^5.1.0"
   }
 }
