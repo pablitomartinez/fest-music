@@ -24,9 +24,26 @@ export function dev() {
   watch("src/js/**/*.js", js);
 }
 
+
+// error del deply 
+
+
+
+// Definimos la tarea `build` para producción
+export const build = series(js, css);
+
+// La tarea `default` ejecuta `build`
+export default build;
+
+
+
+
+
+
+
 //series toma las diferentes tareas de este archivo
 //en este archivo tenemos js css y dev
-export default series(js, css, dev);
+// export default series(js, css, dev);
 
 // en el script dejo vacio...css. es decir
 // 'dev': 'gulp dev'   (que es lo que ejecuta la funcion dev)
