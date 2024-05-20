@@ -3,22 +3,16 @@
 
 .header {
   background-color: v.$verde;
-  // @include m.telefono {
-  //   color: white;
-  //   width: 10px;
-  //   height: 1px;
-  // }
 
-  // @include m.desktop {
-  //   color: white;
-  //   width: 10px;
-  //   height: 1px;
-  // }
-  // @include m.desktopXL {
-  //   color: white;
-  //   width: 10px;
-  //   height: 1px;
-  // }
+  @include m.tablet {
+    &.fixed {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      box-shadow: 0.1rem 0.2rem 0.3rem #333;
+    }
+  }
 
   .contenido-header {
     padding: 2rem;
@@ -54,8 +48,10 @@
     font-size: 2.4rem;
     font-weight: 700;
     color: v.$blanco;
-  }
-  :hover {
-    color: v.$morado;
+    &:hover,
+    &.active
+    {
+      color: v.$morado;
+    }
   }
 }

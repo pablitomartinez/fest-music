@@ -16,6 +16,11 @@ body {
     font-style: normal;
     color: v.$negro;
     font-size: 2rem;
+
+    //evita el scroll con la imagen
+    &.overflow-hidden{
+        overflow: hidden;
+    }
 }
 p {
     color: v.$negro;
