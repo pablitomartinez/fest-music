@@ -1,5 +1,5 @@
 //series me permite ejecutar multiples tareas
-import { src, dest, watch, series, parallel } from "gulp";
+import { src, dest, watch, series} from "gulp";
 import * as dartSass from "sass";
 import gulpSass from "gulp-sass";
 
@@ -28,7 +28,7 @@ export function html(done) {
 export function dev() {
   watch("src/scss/**/*.scss", css);
   watch("src/js/**/*.js", js);
-    watch("index.html", html);
+  watch("index.html", html);
 }
 
 
