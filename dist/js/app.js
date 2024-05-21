@@ -52,7 +52,7 @@ function crearGaleria() {
   for (let i = 1; i <= numImagen; i++) {
     // generar imagen
     const imagen = document.createElement("IMG");
-    imagen.src = `src/img/gallery/full/${i}.jpg`;
+    imagen.src = `../src/img/gallery/full/${i}.jpg`;
     imagen.alt = `imagen ${i}`;
 
     //Even handler, empiezan con ON
@@ -65,7 +65,7 @@ function crearGaleria() {
 
 function mostrarImagen(i) {
   const imagen = document.createElement("IMG");
-  imagen.src = `src/img/gallery/full/${i}.jpg`;
+  imagen.src = `../src/img/gallery/full/${i}.jpg`;
   imagen.alt = `imagen ${i}`;
 
   // GENERAR MODAL
@@ -109,7 +109,7 @@ function scrollNav() {
       const sectionScroll = e.target.getAttribute('href');
       const section = document.querySelector(sectionScroll);
 
-      section.scrollIntoView({behavior: 'smooth'})
+      section.scrollIntoView({behavior: 's'})
     })
   });
 }
