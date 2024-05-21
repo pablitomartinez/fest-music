@@ -28,6 +28,7 @@ export function html(done) {
 export function dev() {
   watch("src/scss/**/*.scss", css);
   watch("src/js/**/*.js", js);
+    watch("index.html", html);
 }
 
 
