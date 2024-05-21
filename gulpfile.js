@@ -19,10 +19,28 @@ export function css(done) {
   done();
 }
 
+// Nueva tarea para copiar index.html
+export function html(done) {
+  src("index.html").pipe(dest("dist"));
+  done();
+}
+
 export function dev() {
   watch("src/scss/**/*.scss", css);
   watch("src/js/**/*.js", js);
 }
+
+
+// ? SOLICION CHATGPT----------------------------
+
+// Definimos la tarea `build` para producción, incluyendo la tarea `html`
+export const build = series(js, css, html);
+
+// La tarea `default` ejecuta `build`
+export default build;
+
+
+// ? SOLICION CHATGPT----------------------------
 
 
 // error del deply 
@@ -43,7 +61,7 @@ export function dev() {
 
 //series toma las diferentes tareas de este archivo
 //en este archivo tenemos js css y dev
-export default series(js, css, dev);
+// export default series(js, css, dev);
 
 // en el script dejo vacio...css. es decir
 // 'dev': 'gulp dev'   (que es lo que ejecuta la funcion dev)
